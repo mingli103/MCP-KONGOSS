@@ -57,33 +57,6 @@ export async function getKongMetrics(api) {
     }
 }
 /**
- * Get Kong OSS health status
- */
-export async function getKongHealth(api) {
-    try {
-        const health = await api.getHealth();
-        return {
-            metadata: {
-                timestamp: new Date().toISOString(),
-                healthCheck: "Kong OSS Health Status"
-            },
-            health: {
-                status: health.status || "unknown",
-                details: health.details || {},
-                timestamp: health.timestamp
-            },
-            recommendations: [
-                "Ensure Kong is responding to health checks",
-                "Monitor database connectivity",
-                "Check for any configuration errors"
-            ]
-        };
-    }
-    catch (error) {
-        throw error;
-    }
-}
-/**
  * Get plugin statistics and analytics
  */
 export async function getPluginStats(api) {
