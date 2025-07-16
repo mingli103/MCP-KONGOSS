@@ -10,7 +10,6 @@ This MCP server provides analytics tools for Kong OSS, allowing AI assistants to
 
 - **Kong Status**: Get node status, database connectivity, and system information
 - **Kong Metrics**: Retrieve Prometheus-formatted metrics for monitoring
-- **Kong Health**: Check overall system health and configuration validity
 - **Plugin Statistics**: Analyze plugin configurations and performance impact
 
 ## Installation
@@ -72,10 +71,6 @@ Get Kong OSS node status and basic system information.
 
 Retrieve Kong metrics in Prometheus format for monitoring.
 
-#### Get Kong Health
-
-Check Kong health status and configuration validity.
-
 #### Get Plugin Statistics
 
 Analyze plugin configurations and their impact.
@@ -110,7 +105,6 @@ This MCP server connects to Kong OSS via the Admin API endpoints:
 
 - `/status` - Node status and health
 - `/metrics` - Prometheus metrics
-- `/health` - Health check endpoint
 - `/plugins` - Plugin configurations
 
 ## Troubleshooting
