@@ -54,6 +54,14 @@ export KONG_ADMIN_TOKEN=your_admin_token_here
 npm start
 ```
 
+### Run Tests
+
+```bash
+npm test
+```
+
+Tests use [Vitest](https://vitest.dev/).
+
 ### Available Tools
 
 #### Get Kong Status
@@ -77,7 +85,14 @@ Analyze plugin configurations and their impact.
 ```bash
 # Development mode with auto-rebuild
 npm run dev
+
+# Run all tests
+npm test
 ```
+
+## CI/CD
+
+This project uses GitHub Actions for CI/CD. All pushes and pull requests to `main` will automatically run build and test steps.
 
 ## Architecture
 
