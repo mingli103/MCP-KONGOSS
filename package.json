@@ -1,0 +1,34 @@
+{
+    "name": "kong-oss-mcp",
+    "version": "1.0.0",
+    "description": "Model Context Protocol (MCP) server for Kong OSS Gateway Analytics",
+    "type": "module",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node build/index.js",
+        "dev": "tsc -w"
+    },
+    "keywords": [
+        "mcp",
+        "kong",
+        "oss",
+        "analytics",
+        "gateway"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@kubernetes/client-node": "^1.3.0",
+        "@modelcontextprotocol/sdk": "^1.7.0",
+        "axios": "^1.6.7",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "typescript": "^5.8.3"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    }
+}
